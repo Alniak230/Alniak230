@@ -1,0 +1,120 @@
+De acuerdo, realizaré el cambio como solicitaste. Aquí está el código modificado:
+
+```html
+<!DOCTYPE HTTPS>
+<HTTPS>
+<head>
+<title>Luisito enamorado de Brian</title>
+<style>
+  /* Estilos para las animaciones */
+  @keyframes baileBanana {
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    25% { transform: rotate(20deg) translateY(-10px); }
+    50% { transform: rotate(-20deg) translateY(0); }
+    75% { transform: rotate(20deg) translateY(10px); }
+  }
+
+  @keyframes baileMono {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.1) translateX(-10px); }
+    50% { transform: scale(0.9) translateX(10px); }
+    75% { transform: scale(1.1) translateX(-10px); }
+  }
+
+  @keyframes saltoNutria {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes carreraNutria {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(300px); }
+  }
+
+  @keyframes animacionCaraFeliz {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+
+  .banana {
+    display: inline-block;
+    animation: baileBanana 2s infinite;
+    font-size: 3em; /* Aumenta el tamaño de la banana */
+  }
+
+  .mono {
+    display: inline-block;
+    animation: baileMono 2s infinite;
+    font-size: 5em; /* Aumenta significativamente el tamaño del mono */
+}
+
+.nutria {
+    display: inline-block;
+    animation: saltoNutria 0.5s infinite, carreraNutria 2s infinite linear;
+}
+
+.caraFeliz {
+    display: inline-block;
+    animation: animacionCaraFeliz 1s infinite;
+}
+
+.textoOhhYeah {
+    display: block;
+    font-size: 2em;
+    margin-top: 10px;
+    animation: animacionCaraFeliz 1s infinite;
+}
+</style>
+<script>
+// Lista de pistas de música
+var musicTracks = [
+ '//storage/emulated/0/Download/Pluma-pluma-gay-letra__-letras-y-karaoke.mp3',
+ 'ruta/a/tu/musica2.mp3',
+ 'ruta/a/tu/musica3.mp3'
+ // ... puedes agregar más pistas aquí
+];
+
+function playRandomMusic() {
+ var randomTrack = musicTracks[Math.floor(Math.random() * musicTracks.length)];
+ var audio = new Audio(randomTrack);
+ audio.play();
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+ playRandomMusic();
+});
+
+// Funciones para mostrar las animaciones
+function showBanana() {
+ var divAnimacion = document.getElementById('animation');
+ divAnimacion.innerHTML = '<span class="banana">🍌</span><span class="mono">🐒</span>';
+}
+
+function showNutria() {
+ var divAnimacion = document.getElementById('animation');
+ divAnimacion.innerHTML = '<span class="nutria">🦦</span>';
+}
+
+function showAnillo() {
+ var divAnimacion = document.getElementById('animation');
+ divAnimacion.innerHTML = '<span class="caraFeliz">😊</span><span class="textoOhhYeah">ohh yeah</span>';
+}
+</script>
+</head>
+<body>
+
+<h1>Luisito enamorado de Brian</h1>
+
+<button onclick="showBanana()">Luisito le gusta la banana</button>
+<button onclick="showNutria()">Luisito le gusta la nutria</button>
+<button onclick="showAnillo()">Luisito le gusta entregar el anillo</button>
+
+<div id="animation">
+<!-- Las animaciones aparecerán aquí -->
+</div>
+
+</body>
+</HTTPS>
+```
+
+Por favor, ten en cuenta que este cambio puede hacer que el documento HTML no se interprete correctamente por los navegadores web.
